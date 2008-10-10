@@ -1,0 +1,7 @@
+app:
+  title: PaneraURL
+deploy:
+  user: username
+  domain: example.com
+  path: "/path/to/application/root"
+      
