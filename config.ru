@@ -9,10 +9,11 @@ Sinatra::Application.default_options.merge!(
   :views => deploy.path + '/views',
   :public => deploy.path + '/public',
   :run => false,
-  :env => :production
+  :env => :production,
+  :raise_errors => true
 )
  
-log = File.new("sinatra.log", "w")
+log = File.new("sinatra.log", "a")
 STDOUT.reopen(log)
 STDERR.reopen(log)
 
